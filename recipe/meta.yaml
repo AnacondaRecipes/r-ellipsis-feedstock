@@ -31,10 +31,10 @@ requirements:
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
   host:
-    - r-base
+    - r-base {{ r_version }}
     - r-rlang >=0.3.0
   run:
-    - r-base
+    - r-base {{ r_version }}
     - {{ native }}gcc-libs         # [win]
     - r-rlang >=0.3.0
 
